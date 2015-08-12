@@ -8,6 +8,13 @@
 
 import UIKit
 
+let df = NSDateFormatter()
+@objc class Global {
+    class func dateFormatter() -> NSDateFormatter {
+        return df
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,31 +23,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window  = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+//give the status bar a white color
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+//setup the tabs that are view controllers and add them to a uitabviewcontroller
+        let gvc = GuideViewController(nibName: "GuideViewController", bundle: NSBundle.mainBundle())
+        let mvc = MapViewController()
+        let ovc = OlympicsViewController()
+        let evc = ExtrasViewController()
+        
+        let tbc = setupTabBarController()
+        tbc.viewControllers = [gvc, mvc, ovc, evc]
+//set the index of the view controller in "viewControllers"
+        tbc.selectedIndex = 0
+        for item in tbc.tabBar.items as! [UITabBarItem] {
+            item.image = item.image?.imageWithRenderingMode(.AlwaysOriginal)
+        }
+//set the root View Controller as the tab bar controller
+        window?.rootViewController = tbc
+//start the timer that notifies the app that a new day has arrived
+        startNextDayTimer()
+//standard setup
+        window?.backgroundColor = UIColor.whiteColor()
+        window?.makeKeyAndVisible()
         return true
     }
-
-    func applicationWillResignActive(application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
+    func setupTabBarController() -> UITabBarController {
+        let tbc =  UITabBarController()
+//set the overall appearance of the tab bar
+        tbc.tabBar.tintColor = UIColor.yellowColor()
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.whiteColor()], forState: .Normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.yellowColor()], forState: .Selected)
+//give tabbar the custom blue color
+        tbc.tabBar.barTintColor = UIColor(red: 0.1686, green: 0.5176, blue: 0.8274, alpha: 1)
+        return tbc
     }
-
-    func applicationDidEnterBackground(application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    func startNextDayTimer() {
+//set up a timer that notifies us when a new day begins by calling the newDayArrived function below
     }
-
-    func applicationWillEnterForeground(application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    func newDayArrived() {
+//tell other parts of the application to prepare for the change in date
     }
-
-    func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
 
 }
 

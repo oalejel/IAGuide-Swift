@@ -7,12 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D5229261B75AA5800442D6F /* ClassTimesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5229251B75AA5800442D6F /* ClassTimesController.swift */; };
 		3DA847AB1B7554CD00BE1FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA847AA1B7554CD00BE1FC9 /* AppDelegate.swift */; };
-		3DA847AD1B7554CD00BE1FC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA847AC1B7554CD00BE1FC9 /* ViewController.swift */; };
-		3DA847B01B7554CD00BE1FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA847AE1B7554CD00BE1FC9 /* Main.storyboard */; };
 		3DA847B21B7554CD00BE1FC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA847B11B7554CD00BE1FC9 /* Images.xcassets */; };
 		3DA847B51B7554CD00BE1FC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA847B31B7554CD00BE1FC9 /* LaunchScreen.xib */; };
 		3DA847C11B7554CD00BE1FC9 /* IAGuide_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA847C01B7554CD00BE1FC9 /* IAGuide_SwiftTests.swift */; };
+		3DA847D31B75552E00BE1FC9 /* MXLCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA847CC1B75552E00BE1FC9 /* MXLCalendar.m */; };
+		3DA847D41B75552E00BE1FC9 /* MXLCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA847CE1B75552E00BE1FC9 /* MXLCalendarEvent.m */; };
+		3DA847D51B75552E00BE1FC9 /* MXLCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA847D01B75552E00BE1FC9 /* MXLCalendarManager.m */; };
+		3DA847D61B75552E00BE1FC9 /* NSTimeZone+ProperAbbreviation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA847D21B75552E00BE1FC9 /* NSTimeZone+ProperAbbreviation.m */; };
+		3DA847DE1B75565100BE1FC9 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA847DC1B75565100BE1FC9 /* GuideViewController.swift */; };
+		3DA847DF1B75565100BE1FC9 /* GuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA847DD1B75565100BE1FC9 /* GuideViewController.xib */; };
+		3DBED58C1B7A29C60004A27E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED58B1B7A29C60004A27E /* Location.swift */; };
+		3DBED58E1B7A2A120004A27E /* TodayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED58D1B7A2A120004A27E /* TodayManager.swift */; };
+		3DBED5911B7A2A330004A27E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED58F1B7A2A330004A27E /* MapViewController.swift */; };
+		3DBED5921B7A2A330004A27E /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5901B7A2A330004A27E /* MapViewController.xib */; };
+		3DBED5951B7A2A5D0004A27E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED5931B7A2A5D0004A27E /* InfoViewController.swift */; };
+		3DBED5961B7A2A5D0004A27E /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5941B7A2A5D0004A27E /* InfoViewController.xib */; };
+		3DBED5981B7A2A9E0004A27E /* LocationTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED5971B7A2A9E0004A27E /* LocationTable.swift */; };
+		3DBED59A1B7A2AB50004A27E /* OutlineOverlayRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED5991B7A2AB50004A27E /* OutlineOverlayRenderer.swift */; };
+		3DBED59C1B7A2ACC0004A27E /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED59B1B7A2ACC0004A27E /* LocationStore.swift */; };
+		3DBED59F1B7A2AE90004A27E /* OlympicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED59D1B7A2AE90004A27E /* OlympicsViewController.swift */; };
+		3DBED5A01B7A2AE90004A27E /* OlympicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED59E1B7A2AE90004A27E /* OlympicsViewController.xib */; };
+		3DBED5A21B7A2B100004A27E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED5A11B7A2B100004A27E /* WebViewController.swift */; };
+		3DBED5A51B7A2B350004A27E /* ExtrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED5A31B7A2B350004A27E /* ExtrasViewController.swift */; };
+		3DBED5A61B7A2B350004A27E /* ExtrasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5A41B7A2B350004A27E /* ExtrasViewController.xib */; };
+		3DBED5A81B7A2B730004A27E /* DetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED5A71B7A2B730004A27E /* DetailTableCell.swift */; };
+		3DBED5C01B7A2BA60004A27E /* noconnection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5AA1B7A2BA60004A27E /* noconnection@2x.png */; };
+		3DBED5C11B7A2BA60004A27E /* notpressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5AB1B7A2BA60004A27E /* notpressed@2x.png */; };
+		3DBED5C21B7A2BA60004A27E /* pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5AC1B7A2BA60004A27E /* pressed@2x.png */; };
+		3DBED5C31B7A2BA60004A27E /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5AD1B7A2BA60004A27E /* swift.png */; };
+		3DBED5C41B7A2BA60004A27E /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5AE1B7A2BA60004A27E /* next.png */; };
+		3DBED5C51B7A2BA60004A27E /* gradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5AF1B7A2BA60004A27E /* gradient@2x.png */; };
+		3DBED5C61B7A2BA60004A27E /* decal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5B01B7A2BA60004A27E /* decal@2x.png */; };
+		3DBED5C71B7A2BA60004A27E /* mapoutline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5B11B7A2BA60004A27E /* mapoutline@2x.png */; };
+		3DBED5C81B7A2BA60004A27E /* toggle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5B21B7A2BA60004A27E /* toggle.png */; };
+		3DBED5C91B7A2BA60004A27E /* Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5B31B7A2BA60004A27E /* Circle.png */; };
+		3DBED5CA1B7A2BA60004A27E /* trophy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5B41B7A2BA60004A27E /* trophy@2x.png */; };
+		3DBED5CB1B7A2BA60004A27E /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5B51B7A2BA60004A27E /* star@2x.png */; };
+		3DBED5CC1B7A2BA60004A27E /* star_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5B61B7A2BA60004A27E /* star_selected@2x.png */; };
+		3DBED5CD1B7A2BA60004A27E /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5B71B7A2BA60004A27E /* more@2x.png */; };
+		3DBED5CE1B7A2BA60004A27E /* more_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5B81B7A2BA60004A27E /* more_selected@2x.png */; };
+		3DBED5CF1B7A2BA60004A27E /* compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5B91B7A2BA60004A27E /* compass@2x.png */; };
+		3DBED5D01B7A2BA60004A27E /* compass_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5BA1B7A2BA60004A27E /* compass_sel@2x.png */; };
+		3DBED5D11B7A2BA60004A27E /* noschool@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5BB1B7A2BA60004A27E /* noschool@2x.png */; };
+		3DBED5D21B7A2BA60004A27E /* nextbday.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5BC1B7A2BA60004A27E /* nextbday.png */; };
+		3DBED5D31B7A2BA60004A27E /* nextaday.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5BD1B7A2BA60004A27E /* nextaday.png */; };
+		3DBED5D41B7A2BA60004A27E /* aday.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5BE1B7A2BA60004A27E /* aday.png */; };
+		3DBED5D51B7A2BA60004A27E /* bday.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5BF1B7A2BA60004A27E /* bday.png */; };
+		3DBED5DA1B7A2BCE0004A27E /* ShortDays.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5D71B7A2BCE0004A27E /* ShortDays.plist */; };
+		3DBED5DB1B7A2BCE0004A27E /* Classes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5D81B7A2BCE0004A27E /* Classes.plist */; };
+		3DBED5DC1B7A2BCE0004A27E /* Teachers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5D91B7A2BCE0004A27E /* Teachers.plist */; };
+		3DBED5E01B7A2C980004A27E /* ClassBlockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBED5DE1B7A2C980004A27E /* ClassBlockController.swift */; };
+		3DBED5E11B7A2C980004A27E /* ClassBlockController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBED5DF1B7A2C980004A27E /* ClassBlockController.xib */; };
+		3DBED5E31B7A2DC90004A27E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBED5E21B7A2DC90004A27E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +74,69 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D5229251B75AA5800442D6F /* ClassTimesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTimesController.swift; sourceTree = "<group>"; };
 		3DA847A51B7554CD00BE1FC9 /* IAGuide-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IAGuide-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA847A91B7554CD00BE1FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DA847AA1B7554CD00BE1FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DA847AC1B7554CD00BE1FC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3DA847AF1B7554CD00BE1FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DA847B11B7554CD00BE1FC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3DA847B41B7554CD00BE1FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3DA847BA1B7554CD00BE1FC9 /* IAGuide-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IAGuide-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA847BF1B7554CD00BE1FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DA847C01B7554CD00BE1FC9 /* IAGuide_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAGuide_SwiftTests.swift; sourceTree = "<group>"; };
+		3DA847CA1B75552D00BE1FC9 /* IAGuide-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IAGuide-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		3DA847CB1B75552E00BE1FC9 /* MXLCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLCalendar.h; sourceTree = "<group>"; };
+		3DA847CC1B75552E00BE1FC9 /* MXLCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLCalendar.m; sourceTree = "<group>"; };
+		3DA847CD1B75552E00BE1FC9 /* MXLCalendarEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLCalendarEvent.h; sourceTree = "<group>"; };
+		3DA847CE1B75552E00BE1FC9 /* MXLCalendarEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLCalendarEvent.m; sourceTree = "<group>"; };
+		3DA847CF1B75552E00BE1FC9 /* MXLCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLCalendarManager.h; sourceTree = "<group>"; };
+		3DA847D01B75552E00BE1FC9 /* MXLCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLCalendarManager.m; sourceTree = "<group>"; };
+		3DA847D11B75552E00BE1FC9 /* NSTimeZone+ProperAbbreviation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimeZone+ProperAbbreviation.h"; sourceTree = "<group>"; };
+		3DA847D21B75552E00BE1FC9 /* NSTimeZone+ProperAbbreviation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimeZone+ProperAbbreviation.m"; sourceTree = "<group>"; };
+		3DA847DC1B75565100BE1FC9 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		3DA847DD1B75565100BE1FC9 /* GuideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideViewController.xib; sourceTree = "<group>"; };
+		3DBED58B1B7A29C60004A27E /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3DBED58D1B7A2A120004A27E /* TodayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayManager.swift; sourceTree = "<group>"; };
+		3DBED58F1B7A2A330004A27E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3DBED5901B7A2A330004A27E /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		3DBED5931B7A2A5D0004A27E /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		3DBED5941B7A2A5D0004A27E /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		3DBED5971B7A2A9E0004A27E /* LocationTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTable.swift; sourceTree = "<group>"; };
+		3DBED5991B7A2AB50004A27E /* OutlineOverlayRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineOverlayRenderer.swift; sourceTree = "<group>"; };
+		3DBED59B1B7A2ACC0004A27E /* LocationStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationStore.swift; sourceTree = "<group>"; };
+		3DBED59D1B7A2AE90004A27E /* OlympicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OlympicsViewController.swift; sourceTree = "<group>"; };
+		3DBED59E1B7A2AE90004A27E /* OlympicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OlympicsViewController.xib; sourceTree = "<group>"; };
+		3DBED5A11B7A2B100004A27E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		3DBED5A31B7A2B350004A27E /* ExtrasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtrasViewController.swift; sourceTree = "<group>"; };
+		3DBED5A41B7A2B350004A27E /* ExtrasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtrasViewController.xib; sourceTree = "<group>"; };
+		3DBED5A71B7A2B730004A27E /* DetailTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableCell.swift; sourceTree = "<group>"; };
+		3DBED5AA1B7A2BA60004A27E /* noconnection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noconnection@2x.png"; sourceTree = "<group>"; };
+		3DBED5AB1B7A2BA60004A27E /* notpressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notpressed@2x.png"; sourceTree = "<group>"; };
+		3DBED5AC1B7A2BA60004A27E /* pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pressed@2x.png"; sourceTree = "<group>"; };
+		3DBED5AD1B7A2BA60004A27E /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
+		3DBED5AE1B7A2BA60004A27E /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		3DBED5AF1B7A2BA60004A27E /* gradient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradient@2x.png"; sourceTree = "<group>"; };
+		3DBED5B01B7A2BA60004A27E /* decal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "decal@2x.png"; sourceTree = "<group>"; };
+		3DBED5B11B7A2BA60004A27E /* mapoutline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapoutline@2x.png"; sourceTree = "<group>"; };
+		3DBED5B21B7A2BA60004A27E /* toggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggle.png; sourceTree = "<group>"; };
+		3DBED5B31B7A2BA60004A27E /* Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle.png; sourceTree = "<group>"; };
+		3DBED5B41B7A2BA60004A27E /* trophy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trophy@2x.png"; sourceTree = "<group>"; };
+		3DBED5B51B7A2BA60004A27E /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		3DBED5B61B7A2BA60004A27E /* star_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_selected@2x.png"; sourceTree = "<group>"; };
+		3DBED5B71B7A2BA60004A27E /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@2x.png"; sourceTree = "<group>"; };
+		3DBED5B81B7A2BA60004A27E /* more_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more_selected@2x.png"; sourceTree = "<group>"; };
+		3DBED5B91B7A2BA60004A27E /* compass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass@2x.png"; sourceTree = "<group>"; };
+		3DBED5BA1B7A2BA60004A27E /* compass_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_sel@2x.png"; sourceTree = "<group>"; };
+		3DBED5BB1B7A2BA60004A27E /* noschool@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noschool@2x.png"; sourceTree = "<group>"; };
+		3DBED5BC1B7A2BA60004A27E /* nextbday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextbday.png; sourceTree = "<group>"; };
+		3DBED5BD1B7A2BA60004A27E /* nextaday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextaday.png; sourceTree = "<group>"; };
+		3DBED5BE1B7A2BA60004A27E /* aday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aday.png; sourceTree = "<group>"; };
+		3DBED5BF1B7A2BA60004A27E /* bday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bday.png; sourceTree = "<group>"; };
+		3DBED5D71B7A2BCE0004A27E /* ShortDays.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShortDays.plist; sourceTree = "<group>"; };
+		3DBED5D81B7A2BCE0004A27E /* Classes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Classes.plist; sourceTree = "<group>"; };
+		3DBED5D91B7A2BCE0004A27E /* Teachers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Teachers.plist; sourceTree = "<group>"; };
+		3DBED5DE1B7A2C980004A27E /* ClassBlockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassBlockController.swift; sourceTree = "<group>"; };
+		3DBED5DF1B7A2C980004A27E /* ClassBlockController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassBlockController.xib; sourceTree = "<group>"; };
+		3DBED5E21B7A2DC90004A27E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBED5E31B7A2DC90004A27E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +158,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D5229271B75AC5500442D6F /* Shared Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3DBED5A71B7A2B730004A27E /* DetailTableCell.swift */,
+			);
+			name = "Shared Classes";
+			sourceTree = "<group>";
+		};
 		3DA8479C1B7554CD00BE1FC9 = {
 			isa = PBXGroup;
 			children = (
+				3DBED5E21B7A2DC90004A27E /* MapKit.framework */,
 				3DA847A71B7554CD00BE1FC9 /* IAGuide-Swift */,
 				3DA847BD1B7554CD00BE1FC9 /* IAGuide-SwiftTests */,
 				3DA847A61B7554CD00BE1FC9 /* Products */,
@@ -77,9 +188,13 @@
 		3DA847A71B7554CD00BE1FC9 /* IAGuide-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				3DA847CA1B75552D00BE1FC9 /* IAGuide-Swift-Bridging-Header.h */,
 				3DA847AA1B7554CD00BE1FC9 /* AppDelegate.swift */,
-				3DA847AC1B7554CD00BE1FC9 /* ViewController.swift */,
-				3DA847AE1B7554CD00BE1FC9 /* Main.storyboard */,
+				3DBED5DD1B7A2C060004A27E /* Tabs */,
+				3D5229271B75AC5500442D6F /* Shared Classes */,
+				3DA847D71B75553400BE1FC9 /* Open Source .ics Calendar */,
+				3DBED5D61B7A2BB70004A27E /* School Data */,
+				3DBED5A91B7A2B8E0004A27E /* Images */,
 				3DA847B11B7554CD00BE1FC9 /* Images.xcassets */,
 				3DA847B31B7554CD00BE1FC9 /* LaunchScreen.xib */,
 				3DA847A81B7554CD00BE1FC9 /* Supporting Files */,
@@ -110,6 +225,118 @@
 				3DA847BF1B7554CD00BE1FC9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DA847D71B75553400BE1FC9 /* Open Source .ics Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				3DA847CB1B75552E00BE1FC9 /* MXLCalendar.h */,
+				3DA847CC1B75552E00BE1FC9 /* MXLCalendar.m */,
+				3DA847CD1B75552E00BE1FC9 /* MXLCalendarEvent.h */,
+				3DA847CE1B75552E00BE1FC9 /* MXLCalendarEvent.m */,
+				3DA847CF1B75552E00BE1FC9 /* MXLCalendarManager.h */,
+				3DA847D01B75552E00BE1FC9 /* MXLCalendarManager.m */,
+				3DA847D11B75552E00BE1FC9 /* NSTimeZone+ProperAbbreviation.h */,
+				3DA847D21B75552E00BE1FC9 /* NSTimeZone+ProperAbbreviation.m */,
+			);
+			name = "Open Source .ics Calendar";
+			sourceTree = "<group>";
+		};
+		3DA847D81B7555E100BE1FC9 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				3DA847DC1B75565100BE1FC9 /* GuideViewController.swift */,
+				3DA847DD1B75565100BE1FC9 /* GuideViewController.xib */,
+				3D5229251B75AA5800442D6F /* ClassTimesController.swift */,
+				3DBED58D1B7A2A120004A27E /* TodayManager.swift */,
+				3DBED5DE1B7A2C980004A27E /* ClassBlockController.swift */,
+				3DBED5DF1B7A2C980004A27E /* ClassBlockController.xib */,
+			);
+			name = Today;
+			sourceTree = "<group>";
+		};
+		3DA847D91B7555EB00BE1FC9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				3DBED58B1B7A29C60004A27E /* Location.swift */,
+				3DBED58F1B7A2A330004A27E /* MapViewController.swift */,
+				3DBED5901B7A2A330004A27E /* MapViewController.xib */,
+				3DBED5931B7A2A5D0004A27E /* InfoViewController.swift */,
+				3DBED5941B7A2A5D0004A27E /* InfoViewController.xib */,
+				3DBED5971B7A2A9E0004A27E /* LocationTable.swift */,
+				3DBED5991B7A2AB50004A27E /* OutlineOverlayRenderer.swift */,
+				3DBED59B1B7A2ACC0004A27E /* LocationStore.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		3DA847DA1B75560D00BE1FC9 /* Olympics */ = {
+			isa = PBXGroup;
+			children = (
+				3DBED59D1B7A2AE90004A27E /* OlympicsViewController.swift */,
+				3DBED59E1B7A2AE90004A27E /* OlympicsViewController.xib */,
+				3DBED5A11B7A2B100004A27E /* WebViewController.swift */,
+			);
+			name = Olympics;
+			sourceTree = "<group>";
+		};
+		3DA847DB1B75561500BE1FC9 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				3DBED5A31B7A2B350004A27E /* ExtrasViewController.swift */,
+				3DBED5A41B7A2B350004A27E /* ExtrasViewController.xib */,
+			);
+			name = Extras;
+			sourceTree = "<group>";
+		};
+		3DBED5A91B7A2B8E0004A27E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3DBED5AA1B7A2BA60004A27E /* noconnection@2x.png */,
+				3DBED5AB1B7A2BA60004A27E /* notpressed@2x.png */,
+				3DBED5AC1B7A2BA60004A27E /* pressed@2x.png */,
+				3DBED5AD1B7A2BA60004A27E /* swift.png */,
+				3DBED5AE1B7A2BA60004A27E /* next.png */,
+				3DBED5AF1B7A2BA60004A27E /* gradient@2x.png */,
+				3DBED5B01B7A2BA60004A27E /* decal@2x.png */,
+				3DBED5B11B7A2BA60004A27E /* mapoutline@2x.png */,
+				3DBED5B21B7A2BA60004A27E /* toggle.png */,
+				3DBED5B31B7A2BA60004A27E /* Circle.png */,
+				3DBED5B41B7A2BA60004A27E /* trophy@2x.png */,
+				3DBED5B51B7A2BA60004A27E /* star@2x.png */,
+				3DBED5B61B7A2BA60004A27E /* star_selected@2x.png */,
+				3DBED5B71B7A2BA60004A27E /* more@2x.png */,
+				3DBED5B81B7A2BA60004A27E /* more_selected@2x.png */,
+				3DBED5B91B7A2BA60004A27E /* compass@2x.png */,
+				3DBED5BA1B7A2BA60004A27E /* compass_sel@2x.png */,
+				3DBED5BB1B7A2BA60004A27E /* noschool@2x.png */,
+				3DBED5BC1B7A2BA60004A27E /* nextbday.png */,
+				3DBED5BD1B7A2BA60004A27E /* nextaday.png */,
+				3DBED5BE1B7A2BA60004A27E /* aday.png */,
+				3DBED5BF1B7A2BA60004A27E /* bday.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		3DBED5D61B7A2BB70004A27E /* School Data */ = {
+			isa = PBXGroup;
+			children = (
+				3DBED5D71B7A2BCE0004A27E /* ShortDays.plist */,
+				3DBED5D81B7A2BCE0004A27E /* Classes.plist */,
+				3DBED5D91B7A2BCE0004A27E /* Teachers.plist */,
+			);
+			name = "School Data";
+			sourceTree = "<group>";
+		};
+		3DBED5DD1B7A2C060004A27E /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				3DA847D81B7555E100BE1FC9 /* Today */,
+				3DA847D91B7555EB00BE1FC9 /* Map */,
+				3DA847DA1B75560D00BE1FC9 /* Olympics */,
+				3DA847DB1B75561500BE1FC9 /* Extras */,
+			);
+			name = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +388,7 @@
 				TargetAttributes = {
 					3DA847A41B7554CD00BE1FC9 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = FNU3YT2Q2N;
 					};
 					3DA847B91B7554CD00BE1FC9 = {
 						CreatedOnToolsVersion = 6.4;
@@ -192,9 +420,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DA847B01B7554CD00BE1FC9 /* Main.storyboard in Resources */,
 				3DA847B51B7554CD00BE1FC9 /* LaunchScreen.xib in Resources */,
+				3DBED5D51B7A2BA60004A27E /* bday.png in Resources */,
+				3DBED5DA1B7A2BCE0004A27E /* ShortDays.plist in Resources */,
+				3DBED5CB1B7A2BA60004A27E /* star@2x.png in Resources */,
+				3DBED5D41B7A2BA60004A27E /* aday.png in Resources */,
+				3DBED5D21B7A2BA60004A27E /* nextbday.png in Resources */,
+				3DBED5CF1B7A2BA60004A27E /* compass@2x.png in Resources */,
+				3DA847DF1B75565100BE1FC9 /* GuideViewController.xib in Resources */,
+				3DBED5C41B7A2BA60004A27E /* next.png in Resources */,
+				3DBED5C31B7A2BA60004A27E /* swift.png in Resources */,
+				3DBED5A01B7A2AE90004A27E /* OlympicsViewController.xib in Resources */,
+				3DBED5DB1B7A2BCE0004A27E /* Classes.plist in Resources */,
+				3DBED5CD1B7A2BA60004A27E /* more@2x.png in Resources */,
+				3DBED5D01B7A2BA60004A27E /* compass_sel@2x.png in Resources */,
+				3DBED5D11B7A2BA60004A27E /* noschool@2x.png in Resources */,
 				3DA847B21B7554CD00BE1FC9 /* Images.xcassets in Resources */,
+				3DBED5C61B7A2BA60004A27E /* decal@2x.png in Resources */,
+				3DBED5961B7A2A5D0004A27E /* InfoViewController.xib in Resources */,
+				3DBED5C01B7A2BA60004A27E /* noconnection@2x.png in Resources */,
+				3DBED5921B7A2A330004A27E /* MapViewController.xib in Resources */,
+				3DBED5CC1B7A2BA60004A27E /* star_selected@2x.png in Resources */,
+				3DBED5C71B7A2BA60004A27E /* mapoutline@2x.png in Resources */,
+				3DBED5C21B7A2BA60004A27E /* pressed@2x.png in Resources */,
+				3DBED5DC1B7A2BCE0004A27E /* Teachers.plist in Resources */,
+				3DBED5E11B7A2C980004A27E /* ClassBlockController.xib in Resources */,
+				3DBED5D31B7A2BA60004A27E /* nextaday.png in Resources */,
+				3DBED5C91B7A2BA60004A27E /* Circle.png in Resources */,
+				3DBED5A61B7A2B350004A27E /* ExtrasViewController.xib in Resources */,
+				3DBED5CA1B7A2BA60004A27E /* trophy@2x.png in Resources */,
+				3DBED5CE1B7A2BA60004A27E /* more_selected@2x.png in Resources */,
+				3DBED5C51B7A2BA60004A27E /* gradient@2x.png in Resources */,
+				3DBED5C11B7A2BA60004A27E /* notpressed@2x.png in Resources */,
+				3DBED5C81B7A2BA60004A27E /* toggle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +470,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DA847AD1B7554CD00BE1FC9 /* ViewController.swift in Sources */,
+				3DBED58E1B7A2A120004A27E /* TodayManager.swift in Sources */,
+				3DBED5951B7A2A5D0004A27E /* InfoViewController.swift in Sources */,
+				3DA847D31B75552E00BE1FC9 /* MXLCalendar.m in Sources */,
+				3DBED59A1B7A2AB50004A27E /* OutlineOverlayRenderer.swift in Sources */,
+				3DBED5A51B7A2B350004A27E /* ExtrasViewController.swift in Sources */,
+				3DA847D41B75552E00BE1FC9 /* MXLCalendarEvent.m in Sources */,
+				3DBED5911B7A2A330004A27E /* MapViewController.swift in Sources */,
+				3DBED58C1B7A29C60004A27E /* Location.swift in Sources */,
+				3D5229261B75AA5800442D6F /* ClassTimesController.swift in Sources */,
+				3DBED5981B7A2A9E0004A27E /* LocationTable.swift in Sources */,
+				3DA847D51B75552E00BE1FC9 /* MXLCalendarManager.m in Sources */,
+				3DBED5A81B7A2B730004A27E /* DetailTableCell.swift in Sources */,
+				3DBED59C1B7A2ACC0004A27E /* LocationStore.swift in Sources */,
+				3DBED5E01B7A2C980004A27E /* ClassBlockController.swift in Sources */,
 				3DA847AB1B7554CD00BE1FC9 /* AppDelegate.swift in Sources */,
+				3DBED59F1B7A2AE90004A27E /* OlympicsViewController.swift in Sources */,
+				3DA847D61B75552E00BE1FC9 /* NSTimeZone+ProperAbbreviation.m in Sources */,
+				3DA847DE1B75565100BE1FC9 /* GuideViewController.swift in Sources */,
+				3DBED5A21B7A2B100004A27E /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +511,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3DA847AE1B7554CD00BE1FC9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3DA847AF1B7554CD00BE1FC9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3DA847B31B7554CD00BE1FC9 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -342,9 +609,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "IAGuide-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IAGuide-Swift/IAGuide-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +624,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "IAGuide-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IAGuide-Swift/IAGuide-Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +687,7 @@
 				3DA847C61B7554CD00BE1FC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DA847C71B7554CD00BE1FC9 /* Build configuration list for PBXNativeTarget "IAGuide-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +696,7 @@
 				3DA847C91B7554CD00BE1FC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

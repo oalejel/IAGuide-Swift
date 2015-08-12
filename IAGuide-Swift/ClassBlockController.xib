@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClassBlockController" customModule="IAGuide_Swift" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Pbp-UY-T6g" customClass="ClassBlockViewContainer">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="146"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28Z-cB-vnD">
+                    <rect key="frame" x="0.0" y="0.0" width="27" height="145"/>
+                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="hNp-de-igm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Superclarendon-Bold" family="Superclarendon" pointSize="21"/>
+                    <state key="normal" title="&lt;">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pageButtonClicked:" destination="Pbp-UY-T6g" eventType="touchUpInside" id="7i6-18-UQk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajE-5J-z4K">
+                    <rect key="frame" x="283" y="1" width="27" height="145"/>
+                    <color key="backgroundColor" white="0.7184103261" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="6iW-5e-foR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Superclarendon-Bold" family="Superclarendon" pointSize="21"/>
+                    <state key="normal" title="&gt;">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pageButtonClicked:" destination="Pbp-UY-T6g" eventType="touchUpInside" id="hPN-SW-c1G"/>
+                    </connections>
+                </button>
+                <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="HlQ-qn-J8u">
+                    <rect key="frame" x="144" y="116" width="23" height="37"/>
+                    <color key="pageIndicatorTintColor" white="0.7184103261" alpha="0.73999999999999999" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </pageControl>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAf-SL-6iH">
+                    <rect key="frame" x="27" y="0.0" width="256" height="125"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HlQ-qn-J8u" firstAttribute="top" secondItem="eAf-SL-6iH" secondAttribute="bottom" constant="-9" id="2P4-GA-EJI"/>
+                <constraint firstAttribute="bottom" secondItem="28Z-cB-vnD" secondAttribute="bottom" constant="1" id="4Fr-MJ-XJK"/>
+                <constraint firstItem="28Z-cB-vnD" firstAttribute="top" secondItem="Pbp-UY-T6g" secondAttribute="top" id="EfK-5Q-Okx"/>
+                <constraint firstAttribute="centerX" secondItem="HlQ-qn-J8u" secondAttribute="centerX" constant="-0.5" id="Hzr-YC-BLp"/>
+                <constraint firstItem="ajE-5J-z4K" firstAttribute="top" secondItem="Pbp-UY-T6g" secondAttribute="top" constant="1" id="JCf-cr-YbS"/>
+                <constraint firstAttribute="trailing" secondItem="ajE-5J-z4K" secondAttribute="trailing" id="ZEL-z1-nfS"/>
+                <constraint firstItem="eAf-SL-6iH" firstAttribute="top" secondItem="Pbp-UY-T6g" secondAttribute="top" id="cpA-o1-6qa"/>
+                <constraint firstItem="ajE-5J-z4K" firstAttribute="leading" secondItem="eAf-SL-6iH" secondAttribute="trailing" id="kYh-1z-X5N"/>
+                <constraint firstAttribute="bottom" secondItem="ajE-5J-z4K" secondAttribute="bottom" id="lp1-Me-A38"/>
+                <constraint firstItem="28Z-cB-vnD" firstAttribute="leading" secondItem="Pbp-UY-T6g" secondAttribute="leading" id="o3C-qC-6mF"/>
+                <constraint firstAttribute="bottom" secondItem="HlQ-qn-J8u" secondAttribute="bottom" constant="-7" id="wN5-hG-rLE"/>
+                <constraint firstItem="eAf-SL-6iH" firstAttribute="leading" secondItem="28Z-cB-vnD" secondAttribute="trailing" id="yEu-7F-zen"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pageControl" destination="HlQ-qn-J8u" id="Sl4-vY-VSt"/>
+                <outlet property="scrollView" destination="eAf-SL-6iH" id="bU0-Vu-e3W"/>
+            </connections>
+        </view>
+    </objects>
+</document>
