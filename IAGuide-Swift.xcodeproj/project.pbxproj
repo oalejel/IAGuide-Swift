@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D5229261B75AA5800442D6F /* ClassTimesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5229251B75AA5800442D6F /* ClassTimesController.swift */; };
+		3D52707E1B7BA76B006915EA /* TeacherInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52707D1B7BA76B006915EA /* TeacherInfoController.swift */; };
+		3D5270801B7BA889006915EA /* RoomInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52707F1B7BA889006915EA /* RoomInfoController.swift */; };
 		3DA847AB1B7554CD00BE1FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA847AA1B7554CD00BE1FC9 /* AppDelegate.swift */; };
 		3DA847B21B7554CD00BE1FC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA847B11B7554CD00BE1FC9 /* Images.xcassets */; };
 		3DA847B51B7554CD00BE1FC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DA847B31B7554CD00BE1FC9 /* LaunchScreen.xib */; };
@@ -75,6 +77,8 @@
 
 /* Begin PBXFileReference section */
 		3D5229251B75AA5800442D6F /* ClassTimesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTimesController.swift; sourceTree = "<group>"; };
+		3D52707D1B7BA76B006915EA /* TeacherInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherInfoController.swift; sourceTree = "<group>"; };
+		3D52707F1B7BA889006915EA /* RoomInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomInfoController.swift; sourceTree = "<group>"; };
 		3DA847A51B7554CD00BE1FC9 /* IAGuide-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IAGuide-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA847A91B7554CD00BE1FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DA847AA1B7554CD00BE1FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -263,6 +267,8 @@
 				3DBED5901B7A2A330004A27E /* MapViewController.xib */,
 				3DBED5931B7A2A5D0004A27E /* InfoViewController.swift */,
 				3DBED5941B7A2A5D0004A27E /* InfoViewController.xib */,
+				3D52707D1B7BA76B006915EA /* TeacherInfoController.swift */,
+				3D52707F1B7BA889006915EA /* RoomInfoController.swift */,
 				3DBED5971B7A2A9E0004A27E /* LocationTable.swift */,
 				3DBED5991B7A2AB50004A27E /* OutlineOverlayRenderer.swift */,
 				3DBED59B1B7A2ACC0004A27E /* LocationStore.swift */,
@@ -472,6 +478,7 @@
 			files = (
 				3DBED58E1B7A2A120004A27E /* TodayManager.swift in Sources */,
 				3DBED5951B7A2A5D0004A27E /* InfoViewController.swift in Sources */,
+				3D52707E1B7BA76B006915EA /* TeacherInfoController.swift in Sources */,
 				3DA847D31B75552E00BE1FC9 /* MXLCalendar.m in Sources */,
 				3DBED59A1B7A2AB50004A27E /* OutlineOverlayRenderer.swift in Sources */,
 				3DBED5A51B7A2B350004A27E /* ExtrasViewController.swift in Sources */,
@@ -489,6 +496,7 @@
 				3DA847D61B75552E00BE1FC9 /* NSTimeZone+ProperAbbreviation.m in Sources */,
 				3DA847DE1B75565100BE1FC9 /* GuideViewController.swift in Sources */,
 				3DBED5A21B7A2B100004A27E /* WebViewController.swift in Sources */,
+				3D5270801B7BA889006915EA /* RoomInfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

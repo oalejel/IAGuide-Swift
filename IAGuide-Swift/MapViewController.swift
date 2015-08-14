@@ -19,12 +19,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     var roomTable: LocationTable!
     var initialMapRegion: MKCoordinateRegion!//locatation of school
     var locationManager: CLLocationManager! //MIGHT need this property. guessing ARC will kill if not
-    @IBOutlet var mapView: MKMapView!//shows room locations/pinview callouts trigger InfoViewController
-    @IBOutlet var toggleButton: UIButton! //toggle table with room/teacher choices
-    @IBOutlet var searchField: UITextField!//to search by room/possibly teachers
-    @IBOutlet var headerView: UIView!//blue box above map that says "find your way"
-    @IBOutlet var roomSearchView: UIView!//contains textfield and tableview
-    @IBOutlet var filterSegmentControl: UISegmentedControl!
+    @IBOutlet weak var mapView: MKMapView!//shows room locations/pinview callouts trigger InfoViewController
+    @IBOutlet weak var toggleButton: UIButton! //toggle table with room/teacher choices
+    @IBOutlet weak var searchField: UITextField!//to search by room/possibly teachers
+    @IBOutlet weak var headerView: UIView!//blue box above map that says "find your way"
+    @IBOutlet weak var roomSearchView: UIView!//contains textfield and tableview
+    @IBOutlet weak var filterSegmentControl: UISegmentedControl!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -144,9 +144,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         })
     }
     
-    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
-        if annotation.isKindOfClass(Location.self) {
-            
+    func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
+        //need to check class since not all annotations are custom (i.e. the current location annotation)
+        if let loc = view.annotation as? Location {
+            let ivc = InfoViewController()//pass the annotation!!
         }
     }
 }

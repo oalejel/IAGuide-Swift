@@ -28,9 +28,9 @@ class GuideViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var bImage: UIImage!
     
     var dayImageView: UIImageView!
-    @IBOutlet var tableLoadingIndicator: UIActivityIndicatorView!
-    @IBOutlet var tableView: UITableView!
-    @IBOutlet var calendarHeaderView: UIView!
+    @IBOutlet weak var tableLoadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var calendarHeaderView: UIView!
     
     //MARK: Initializer
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
